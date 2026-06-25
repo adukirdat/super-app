@@ -5,7 +5,7 @@ import FormInput from '../components/registration/FormInput';
 import PageContainer from '../components/common/PageContainer';
 import SectionContainer from '../components/common/SectionContainer';
 import { validateEmail, validateMobile, validateUsername, validateName } from '../utils/validators';
-import registerBanner from '../assets/register-banner.jpg';
+import registerBanner from '../assets/registration/hero-image.png';
 
 const Register = () => {
   const navigate = useNavigate();
@@ -59,7 +59,7 @@ const Register = () => {
   return (
     <PageContainer className="lg:overflow-hidden">
       <div className="grid min-h-screen grid-cols-1 lg:grid-cols-[1.05fr_1fr]">
-        <SectionContainer className="relative min-h-[360px] overflow-hidden bg-cover bg-center lg:min-h-screen" style={{ backgroundImage: `url(${registerBanner})` }}>
+        <SectionContainer className="relative min-h-[360px] overflow-hidden bg-cover bg-center bg-no-repeat lg:min-h-screen" style={{ backgroundImage: `url(${registerBanner})` }}>
           <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
           <div className="absolute bottom-10 left-6 max-w-[360px] sm:left-10 lg:bottom-14">
             <p className="text-[28px] font-bold leading-tight text-white sm:text-[34px]">
